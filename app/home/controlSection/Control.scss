@@ -1,0 +1,156 @@
+.Dashboard {
+  background: #f9f9f9;
+  padding-top: 80px;
+
+  .big {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      h1 {
+        color: var(--gray-900, #18181b);
+        font-size: 50.923px;
+        font-weight: 700;
+        line-height: 58.198px;
+        width: 559.709px;
+        margin-bottom: 48px;
+      }
+      .products {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        gap: 22px;
+        .product {
+          display: flex;
+          padding: 4px 100px 4px 17px;
+
+          align-items: center;
+          border-radius: 12.041px;
+          background: var(--Full-White, #fff);
+          width: 345.17px;
+          height: 88.299px;
+          gap: 12px;
+          box-shadow: -7px 8px 13px 0px rgba(70, 70, 70, 0.1);
+          transition: 0.3s;
+          &:hover {
+            box-shadow: -13px 8px 13px 0px rgba(70, 70, 70, 0.1);
+            transform: translateY(-6px);
+            transform: translateX(6px);
+          }
+          img {
+            width: 77px;
+            height: 77px;
+          }
+          .right {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            h4 {
+              color: var(--Black-Color, #323142);
+              font-size: 19.065px;
+              font-weight: 600;
+              line-height: 140%;
+            }
+            p {
+              color: var(--Black-Color, #323142);
+
+              font-size: 12.041px;
+              font-weight: 500;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      .dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 534px;
+        height: 466.465px;
+        border-radius: 25.129px;
+        border: 1.571px solid var(--greyscale-200, #edf2f7);
+        background: var(--others-white, #fff);
+        .par {
+          display: flex;
+          align-items: center;
+          column-gap: 148px;
+          margin-bottom: 45px;
+          h2 {
+            color: var(--greyscale-900, #1a202c);
+            font-size: 28.271px;
+            font-weight: 800;
+            line-height: 135%;
+            letter-spacing: 0.314px;
+          }
+          p {
+            color: var(--greyscale-900, #1a202c);
+            font-size: 18.847px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 0.628px;
+          }
+        }
+        .items {
+          display: flex;
+          flex-direction: column;
+          row-gap: 21px;
+          .items1 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 18.847px;
+            border: 1.571px solid var(--greyscale-200, #edf2f7);
+            width: 458.612px;
+            height: 135.071px;
+            padding: 25.129px;
+            gap: 20.418px;
+            .top {
+              display: flex;
+              align-items: center;
+              .center {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-left: 18px;
+                h3 {
+                  color: var(--greyscale-900, #1a202c);
+                  font-size: 18.847px;
+                  font-weight: 800;
+                  line-height: 150%;
+                  letter-spacing: 0.628px;
+                }
+                p {
+                  color: var(--greyscale-500, #a0aec0);
+                  font-size: 15.706px;
+                  font-weight: 500;
+                  line-height: 150%;
+                  letter-spacing: 0.628px;
+                  width: 150px;
+                }
+              }
+              h5 {
+                color: var(--greyscale-900, #1a202c);
+                text-align: right;
+                font-size: 21.988px;
+                font-weight: 800;
+                line-height: 150%;
+                letter-spacing: 0.314px;
+                margin-left: 106px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .liner {
+    width: 1246px;
+    height: 1px;
+    background: #cbcbcb;
+    margin-top: 134px;
+  }
+}
