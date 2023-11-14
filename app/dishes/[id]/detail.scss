@@ -1,0 +1,103 @@
+.card {
+  width: 224.628px;
+  // height: 390.36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 34.581px;
+  border: 1.441px solid var(--colors-gray-gray-2, #f4f4f6);
+  background: var(--Pure-White, #fff);
+  box-shadow: 8px 6px 16px 4px rgb(223 223 223 / 70%);
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 4px 14px 2px rgb(223 223 223 / 70%);
+  }
+  .img {
+    .image {
+      position: relative;
+      width: 180px;
+      height: 200px;
+      border-radius: 50%;
+      // background: #edebeb;
+      margin-top: 12px;
+      // margin-bottom: -220px;
+    }
+    .like {
+      position: absolute;
+      margin-top: -190px;
+      margin-left: 160px;
+    }
+  }
+  .items {
+    .p1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #daa31a;
+      font-size: 11.422px;
+      font-weight: 400;
+      border-radius: 4.828px;
+      background: #f7edd0;
+      width: 58.896px;
+      height: 22.207px;
+      margin-top: -10px;
+    }
+    h3 {
+      color: var(--BLACK, #323142);
+      font-size: 23.054px;
+      font-weight: 600;
+      line-height: 37.463px;
+      margin-top: 8px;
+    }
+    .line {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      p {
+        color: var(--Grey, #8e97a6);
+        font-size: 17.291px;
+        font-weight: 400;
+        line-height: 23.054px;
+      }
+    }
+    .last {
+      display: flex;
+      align-items: center;
+      margin-top: 9px;
+      justify-content: center;
+      text-align: center;
+
+      h4 {
+        color: var(--BLACK, #323142);
+        font-size: 25.936px;
+        font-weight: 700;
+        line-height: 20.345px;
+      }
+      p {
+        color: var(--Grey, #8e97a6);
+        font-size: 18.806px;
+        font-weight: 700;
+        line-height: 40.345px;
+        margin-top: 5px;
+      }
+      button {
+        width: 33.83px;
+        height: 29.721px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #323142;
+        border-radius: 10px;
+        margin-left: 20px;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: rgb(247, 3, 3);
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ import DishesSection from "./dishesSection/DishesSection";
 import ControlSection from "./controlSection/ControlSection";
 import CustomerSection from "./customerSection/CustomerSection";
 import EmailSection from "./emailSection/EmailSection";
+import Footer from "../components/footer/Footer";
 const Homepage = () => {
   const [dish, setDish] = useState([]);
 

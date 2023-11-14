@@ -5,6 +5,11 @@ header {
   backdrop-filter: blur(6px);
   box-shadow: 3px 1px 4px 0px rgba(229, 229, 229, 0.7);
   z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
   .container {
     .header-wrap {
       .logo {
@@ -17,7 +22,15 @@ header {
           line-height: 130%; /* 27.529px */
         }
       }
-      nav {
+      .navbar {
+        justify-content: space-between;
+        width: 1080px;
+        @media (max-widht: 789px) {
+          justify-content: center;
+        }
+        @media (max-widht: 661px) {
+          width: 391px;
+        }
         .nav-links {
           p {
             color: #606060;

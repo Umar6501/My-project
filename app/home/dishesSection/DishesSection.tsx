@@ -1,6 +1,9 @@
+"use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./Dishes.scss";
+import useStore from "../../store/useStore";
+import Load from "@/app/components/loading/Load";
 
 interface Dish {
   id: number;
@@ -12,24 +15,15 @@ interface Dish {
 }
 
 const DishesSection: React.FC = () => {
-  const [dish, setDish] = useState<Dish[]>([]);
-
-  const fetchDishes = async () => {
-    try {
-      let res = await axios.get<Dish[]>(
-        "https://654ea70d358230d8f0ccbf59.mockapi.io/api/v1/Dishes?page=1&limit=5"
-      );
-      let data = res.data;
-      setDish(data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  const { loading, error, todos, fetchTodos } = useStore();
 
   useEffect(() => {
-    fetchDishes();
-  }, []);
+    if (error) {
+      error(error);
+    }
 
+    fetchTodos();
+  }, []);
   return (
     <section className="dishes">
       <div className="container">
@@ -37,8 +31,8 @@ const DishesSection: React.FC = () => {
           <h1>Our Top Dishes</h1>
         </div>
         <div className="cards">
-          {dish.length > 0 ? (
-            dish.map((dishes) => (
+          {todos.length > 0 ? (
+            todos.map((dishes: any) => (
               <div className="card" key={dishes.id}>
                 <div className="img">
                   <img src={dishes.imgUrl} alt="Error" className="image" />
@@ -61,7 +55,7 @@ const DishesSection: React.FC = () => {
               </div>
             ))
           ) : (
-            <p>Loading dishes...</p>
+            <Load />
           )}
         </div>
         <button className="all buttoms">View All</button>

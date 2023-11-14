@@ -6,7 +6,7 @@ export default function Login() {
   return (
     <div className="Login absolute z-[101] top-0 bottom-[0px] left-0 right-0 w-full h-full bg-white">
       <div className="login-content flex flex-row justify-between">
-        <div className=" left-content flex flex-col items-center gap-2 justify-center h-[744px] w-[990px]">
+        <div className="left-content flex flex-col items-center gap-2 justify-center h-[744px] w-[990px]">
           <img
             src="./logo.svg"
             alt=""
