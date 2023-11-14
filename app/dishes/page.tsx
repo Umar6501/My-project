@@ -50,7 +50,7 @@ const shopPage = (): JSX.Element => {
       <div className="container">
         <form
           onSubmit={handleSubmit}
-          className="pt-[100px] fixed top-[-84px] right-[290px] z-[101]"
+          className="pt-[100px] fixed top-[-84px] right-[340px] z-[101]"
         >
           <input
             className="w-[400px] p-3 outline-none border-2 rounded-full"
@@ -62,7 +62,7 @@ const shopPage = (): JSX.Element => {
           <div className="flex justify-between items-center">
             <button
               type="submit"
-              className="border-[#6C5FBC] absolute top-[105px] right-[50px] h-[40px] z-[101] w-[40px] flex justify-center items-center bg-[#6C5FBC] text-white rounded-full   hover:text-[#4a4949]"
+              className="border-[#6C5FBC] absolute top-[105px] right-[52px] h-[40px] z-[101] w-[40px] flex justify-center items-center bg-[#6C5FBC] text-white rounded-full   hover:text-[#4a4949]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
